@@ -36,6 +36,7 @@ public class Math1 {
         System.out.println(calc.subtract(10, 5));
         System.out.println(calc.multiply(10, 5));
         System.out.println(calc.divide(10, 5));
+        System.out.println(calc.divide(10.36, 5.43));
         System.out.println(calc.modulo(10, 4));
     }
 }
