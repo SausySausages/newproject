@@ -65,15 +65,65 @@ public class Conditionals {
     
 }
 
-public class Password {
+//challenge 1
+public class PasswordCheck {
     public static void main(String[] args) {
 
-        Scanner input = new Scanner(System.in);
+        String storedPassword = "password123";
 
-        String pass = "IAmPassword";
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter the password: ");
+        String userPassword = scanner.nextLine();
 
-        input.equals(pass)
+        if (userPassword.equals(storedPassword)) {
+            System.out.println("Access granted");
+        } else {
+            System.out.println("Access denied");
+        }
 
     }
+}
 
+
+//challenge 2
+public class EvenOrOdd {
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter a number: ");
+        int number = scanner.nextInt();
+
+        if (number % 2 == 0) {
+            System.out.println("The number is even");
+        } else {
+            System.out.println("The number is odd");
+        }
+
+    }
+}
+
+
+//challenge 3
+public class LetterGrade {
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter your grade (0-100): ");
+        String input = scanner.nextLine();
+
+        int grade = Integer.parseInt(input);
+
+        if (grade >= 90) {
+            System.out.println("A");
+        } else if (grade >= 80) {
+            System.out.println("B");
+        } else if (grade >= 70) {
+            System.out.println("C");
+        } else if (grade >= 60) {
+            System.out.println("D");
+        } else {
+            System.out.println("F");
+        }
+
+    }
 }
